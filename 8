@@ -132,10 +132,7 @@ screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300
 #install OpenVPN
 cp -r /usr/share/easy-rsa/ /etc/openvpn
 
-# Generate key for tls-auth
-openvpn --genkey --secret /etc/openvpn/ta.key
-
-##certificates
+#certificates
 cacert='-----BEGIN CERTIFICATE-----
 MIIEmzCCA4OgAwIBAgIJAITInYiGbcQSMA0GCSqGSIb3DQEBCwUAMIGPMQswCQYD
 VQQGEwJDTjEQMA4GA1UECBMHQmVpSmluZzEQMA4GA1UEBxMHQmVpSmluZzELMAkG
