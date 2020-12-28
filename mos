@@ -105,8 +105,8 @@ echo "unique_subject = no" >> keys/index.txt.attr
 # buat server key name yang telah kita buat sebelum nya yakni "white-vps"
 ./build-key-server white-vps
 
-# Generate key for tls-auth
-openvpn --genkey --secret /etc/openvpn/ta.key
+# generate ta.key
+openvpn --genkey --secret keys/ta.key
 
 # Buat config server UDP 1194
 cd /etc/openvpn
