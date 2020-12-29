@@ -838,6 +838,7 @@ http-proxy-option CUSTOM-HEADER Referrer storage.googleapis.com
 $(cat /etc/openvpn/ca.crt)
 $(cat /etc/openvpn/server.crt)
 $(cat /etc/openvpn/server.key)
+$(cat /etc/openvpn/ta.key)
 </tls-auth>
 EOF15
 
@@ -872,6 +873,7 @@ http-proxy-option CUSTOM-HEADER X-Forwarded-For www.viber.com.edgekey.net
 $(cat /etc/openvpn/ca.crt)
 $(cat /etc/openvpn/server.crt)
 $(cat /etc/openvpn/server.key)
+$(cat /etc/openvpn/ta.key)
 </tls-auth>
 EOF16
 
@@ -904,6 +906,7 @@ verb 1
 $(cat /etc/openvpn/ca.crt)
 $(cat /etc/openvpn/server.crt)
 $(cat /etc/openvpn/server.key)
+$(cat /etc/openvpn/ta.key)
 </tls-auth>
 EOF162
 
@@ -938,6 +941,7 @@ nice -20
 $(cat /etc/openvpn/ca.crt)
 $(cat /etc/openvpn/server.crt)
 $(cat /etc/openvpn/server.key)
+$(cat /etc/openvpn/ta.key)
 </tls-auth>
 EOF17
 
@@ -978,6 +982,7 @@ http-proxy-option CUSTOM-HEADER X-Forwarded-For www.googleapis.com
 $(cat /etc/openvpn/ca.crt)
 $(cat /etc/openvpn/server.crt)
 $(cat /etc/openvpn/server.key)
+$(cat /etc/openvpn/ta.key)
 </tls-auth>
 EOF152
 
@@ -1019,6 +1024,7 @@ http-proxy-option CUSTOM-HEADER Connection Keep-Alive
 $(cat /etc/openvpn/ca.crt)
 $(cat /etc/openvpn/server.crt)
 $(cat /etc/openvpn/server.key)
+$(cat /etc/openvpn/ta.key)
 </tls-auth>
 EOF1152
 
@@ -1058,6 +1064,7 @@ http-proxy-option CUSTOM-HEADER "X-Forwarded-For: viber.com"
 $(cat /etc/openvpn/ca.crt)
 $(cat /etc/openvpn/server.crt)
 $(cat /etc/openvpn/server.key)
+$(cat /etc/openvpn/ta.key)
 </tls-auth>
 EOF1632
 
