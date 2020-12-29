@@ -38,10 +38,10 @@ Dropbear_Port2='843'
 # Stunnel Ports
 Stunnel_Port1='445' # through Dropbear
 Stunnel_Port2='444' # through OpenSSH
-Stunnel_Port3='443' # through OpenVPN
+Stunnel_Port3='446' # through OpenVPN
 
 # OpenVPN Ports
-OpenVPN_Port1='110'
+OpenVPN_Port1='443'
 OpenVPN_Port2='1194' # take note when you change this port, openvpn sun noload config will not work
 
 # Privoxy Ports (must be 1024 or higher)
