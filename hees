@@ -323,7 +323,7 @@ verb 2
 ncp-disable
 cipher none
 auth none
-myOpenVPNconf2 
+myOpenVPNconf2
 
  cat <<'EOF7'> /etc/openvpn/ca.crt
 -----BEGIN CERTIFICATE-----
