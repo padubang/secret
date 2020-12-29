@@ -244,6 +244,9 @@ function InsOpenVPN(){
  # Removing all existing openvpn server files
  rm -rf /etc/openvpn/*
 
+# Generate key for tls-auth
+openvpn --genkey --secret /etc/openvpn/ta.key
+
  # Creating server.conf, ca.crt, server.crt and server.key
  cat <<'myOpenVPNconf' > /etc/openvpn/server_tcp.conf
 # OpenVPN TCP
@@ -286,6 +289,7 @@ ca /etc/openvpn/ca.crt
 cert /etc/openvpn/server.crt
 key /etc/openvpn/server.key
 dh /etc/openvpn/dh2048.pem
+tls-auth /etc/openvpn/ta.key 1
 verify-client-cert none
 username-as-common-name
 key-direction 0
