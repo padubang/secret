@@ -470,7 +470,7 @@ Q+3SubL3Oob8tObE5UdNK/Q=
 </key>
 <tls-auth>
 EOF10
- cat <<'EOF13'> /etc/openvpn/server.key
+ cat <<'EOF13'> /etc/openvpn/ta.key
 #
 # 2048 bit OpenVPN static key
 #
