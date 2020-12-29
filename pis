@@ -163,7 +163,7 @@ export EASY_RSA="${EASY_RSA:-.}"
 "$EASY_RSA/pkitool" client
 cd
 # Generate key for tls-auth
-openvpn --genkey --secret /etc/openvpn/ta.key
+openvpn --genkey --secret keys/ta.key
 #cp /etc/openvpn/easy-rsa/keys/{server.crt,server.key} /etc/openvpn
 cp /etc/openvpn/easy-rsa/keys/server.crt /etc/openvpn/server.crt
 cp /etc/openvpn/easy-rsa/keys/server.key /etc/openvpn/server.key
