@@ -257,7 +257,7 @@ ca /etc/openvpn/ca.crt
 cert /etc/openvpn/server.crt
 key /etc/openvpn/server.key
 dh /etc/openvpn/dh2048.pem
-tls-auth /etc/openvpn/ta.key 0
+tls-auth ta.key 0
 verify-client-cert none
 username-as-common-name
 key-direction 0
@@ -289,7 +289,7 @@ ca /etc/openvpn/ca.crt
 cert /etc/openvpn/server.crt
 key /etc/openvpn/server.key
 dh /etc/openvpn/dh2048.pem
-tls-auth /etc/openvpn/ta.key 1
+tls-auth ta.key 1
 verify-client-cert none
 username-as-common-name
 key-direction 0
